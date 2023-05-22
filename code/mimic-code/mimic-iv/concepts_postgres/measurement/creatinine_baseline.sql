@@ -33,7 +33,7 @@ WITH p AS (
     SELECT
         hadm_id
         , MIN(creatinine) AS scr_min
-    FROM mimiciv_derived.chemistry
+    FROM mimiciv_derived.chemistry2
     GROUP BY hadm_id
 )
 
